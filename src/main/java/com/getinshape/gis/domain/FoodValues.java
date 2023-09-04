@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Builder
 @Entity
 @Table(name = "food_values")
-public class FoodTypesValues {
+public class FoodValues {
     @Id
     private Integer valuesId;
 
