@@ -8,4 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 @Repository
 public interface FoodNamesRepository extends CrudRepository<FoodNames, Integer> {
     Iterable<FoodNames> findAll();
+
+    FoodNames findFoodNamesByFoodNameHebrew(String foodNameHebrew);
+
 }

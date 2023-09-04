@@ -15,4 +15,9 @@ public class FoodNamesService {
     public Iterable<FoodNames>getAllFoodNames() {
         return foodNamesRepository.findAll();
     }
+
+    public String getByHebrewName(String hebrewName) {
+        FoodNames response = foodNamesRepository.findFoodNamesByFoodNameHebrew(hebrewName);
+        return response.getFoodNameRomanian();
+    }
 }
