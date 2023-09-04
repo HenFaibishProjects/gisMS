@@ -1,0 +1,37 @@
+server:
+  port: 9000
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    hikari:
+      minimumIdle: 5
+      maximumPoolSize: 15
+      idleTimeout: 30000
+      connectionTimeout: 30000
+    url: jdbc:mysql://localhost:3306/fab
+    username: root
+    password: secretpassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.mysqldialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  batch:
+    job:
+      enabled: false
+    chunk-size: 20
+    jdbc:
+      initialize-schema: always
+      platform: mysql
+      isolation-level-for-create: default
