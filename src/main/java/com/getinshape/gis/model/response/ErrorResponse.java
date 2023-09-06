@@ -1,4 +1,4 @@
-package com.getinshape.gis.response;
+package com.getinshape.gis.model.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

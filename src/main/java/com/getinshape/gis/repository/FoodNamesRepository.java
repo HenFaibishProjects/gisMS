@@ -11,4 +11,10 @@ public interface FoodNamesRepository extends CrudRepository<FoodNames, Integer> 
 
     FoodNames findFoodNamesByFoodNameHebrew(String foodNameHebrew);
 
+    FoodNames findFoodNamesByFoodNameRomanian(String foodNameRomanian);
+
+    FoodNames findFoodNamesByFoodName (String foodName);
+
+    FoodNames findFoodNamesByFoodType (int foodType);
+
 }
