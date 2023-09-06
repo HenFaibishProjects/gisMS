@@ -1,6 +1,6 @@
 package com.getinshape.gis.exceptions;
 
-import com.getinshape.gis.response.ErrorResponse;
+import com.getinshape.gis.model.response.ErrorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;
